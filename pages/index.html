@@ -4,26 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/scss/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../assets/scss/vendors/bootstrap.min.css">
-    <title>KOPPEE - Coffe Shop HTML Template</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>KOPPEE - Coffee Shop HTML Template</title>
 </head>
 
 <body>
-    <div class="container-fuild p-0 nav-bar">
+    <div class="container-fluid p-0 nav-bar">
         <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
             <a href="" class="navbar-brand px-lg-4 m-0">
                 <h1 class="m-0 display-4 text-uppercase text-white">KOPPEE</h1>
             </a>
-            <button class="navbar-toggler">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-between">
-                <div class="navbar-nav ml-auto p-4">
-                    <a href="" class="nav-item nav-link active">Home</a>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
                     <a href="about.html" class="nav-item nav-link">About Us</a>
                     <a href="service.html" class="nav-item nav-link">Service</a>
                     <a href="menu.html" class="nav-item nav-link">Menu</a>
@@ -33,24 +34,42 @@
         </nav>
     </div>
     <!-- HOME SECTİON START -->
-    <div class="container-fuild p-0 mb-5">
-        <div class="carousel slide overlay-button">
+    <div class="container-fluid p-0 mb-5">
+        <div id="mainCarousel" class="carousel slide overlay-button" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="../images/carousel-1.jpg" class="w-100" alt="">
+                    <img src="../images/carousel-1.jpg" class="w-100" alt="Slide 1">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <h2 class="text-primary font-weight-medium m-0">We Have Been Serving</h2>
+                        <h2 class="text-primary font-weight-normal m-0">We Have Been Serving</h2>
                         <h1 class="display-1 text-white m-0">COFFEE</h1>
-                        <h2>* SINCS 1952 *</h2>
+                        <h2>* SINCS 1950 *</h2>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/carousel-2.jpg" class="w-100" alt="Slide 2">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <h2 class="text-primary font-weight-normal m-0">We Have Been Serving</h2>
+                        <h1 class="display-1 text-white m-0">COFFEE</h1>
+                        <h2>* SINCS 1950 *</h2>
                     </div>
                 </div>
             </div>
+    
+            <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </div>
+    
     <!-- HOME SECTİON END -->
 
     <!-- ABOUT SECTİON START -->
-    <div class="container-fuild py-5">
+    <div class="container-fluid py-5">
         <div class="container">
             <div class="section-title">
                 <h4 class="text-primary text-uppercase">About Us</h4>
@@ -64,25 +83,25 @@
                     <p>Takimata sed vero vero no sit sed, justo clita duo no duo amet et, nonumy kasd sed dolor eos diam
                         lorem eirmod. Amet sit amet amet no. Est nonumy sed labore eirmod sit magna. Erat at est justo
                         sit ut. Labor diam sed ipsum et eirmod</p>
-                    <a href="" class="btn btn-primary font-weight-bold py-2 px-4 mt-2">Learn More</a>
+                    <a href="#" class="btn btn-primary font-weight-bold py-2 px-4 mt-2">Learn More</a>
 
 
                 </div>
                 <div class="col-lg-4 py-5 py-lg-0" style="min-height: 500px;">
-                    <div class="position-a h1-100">
-                        <!-- <img src="../images/about.png" class="position-absolute w-100 h-100" alt=""
-                            style="object-fit: cover;"> -->
+                    <div class="position-relative h-100">
+                        <img src="../images/about.png" class="position-absolute w-100 h-100" alt=""
+                            style="object-fit: cover;">
                     </div>
                 </div>
                 <div class="col-lg-4 py-0 py-lg-5">
-                    <h1 class="mb-3">Out Vision</h1>
+                    <h1 class="mb-3">Our Vision</h1>
                     <p>Invidunt lorem justo sanctus clita. Erat lorem labore ea, justo dolor lorem ipsum ut sed eos,
                         ipsum et dolor kasd sit ea justo. Erat justo sed sed diam. Ea et erat ut sed diam sea ipsum est
                         dolor</p>
-                    <h5 class="mb-3"><i class="fa fa-check text-primary mr-3"></i>Lorem ipsum dolor sit amet.</h5>
-                    <h5 class="mb-3"><i class="fa fa-check text-primary mr-3"></i>Lorem ipsum dolor sit amet.</h5>
-                    <h5 class="mb-3"><i class="fa fa-check text-primary mr-3"></i>Lorem ipsum dolor sit amet.</h5>
-                    <h5 class="mb-3"><i class="fa fa-check text-primary mr-3"></i>Lorem ipsum dolor sit amet.</h5>
+                    <h5 class="mb-3"><i class="fa fa-check text-primary mx-1"></i>Lorem ipsum dolor sit amet.</h5>
+                    <h5 class="mb-3"><i class="fa fa-check text-primary mx-1"></i>Lorem ipsum dolor sit amet.</h5>
+                    <h5 class="mb-3"><i class="fa fa-check text-primary mx-1"></i>Lorem ipsum dolor sit amet.</h5>
+                    <h5 class="mb-3"><i class="fa fa-check text-primary mx-1"></i>Lorem ipsum dolor sit amet.</h5>
                     <a href="" class="btn btn-primary font-weight-bold px-4 mt-2">Learn More</a>
                 </div>
             </div>
@@ -91,7 +110,7 @@
     <!-- ABOUT SECTİON END -->
 
     <!-- SERVİCE SECTİON START -->
-    <div class="container-fuild pt-5">
+    <div class="container-fluid pt-5">
         <div class="container">
             <div class="section-title">
                 <h4 class="text-primary text-uppercase">Our Services</h4>
@@ -101,7 +120,7 @@
                 <div class="col-lg-6 mb-5">
                     <div class="row align-items-center">
                         <div class="col-sm-5">
-                            <img src="../images/service-1.jpg" class="img-fuild mb-3 mb-sm-0" alt="">
+                            <img src="../images/service-1.jpg" class="img-fluid mb-3 mb-sm-0" alt="">
                         </div>
                         <div class="col-sm-7">
                             <h4><i class="fa fa-truck service-icon"></i>Fastest Door Delivery</h4>
@@ -116,7 +135,7 @@
                 <div class="col-lg-6 mb-5">
                     <div class="row align-items-center">
                         <div class="col-sm-5">
-                            <img src="../images/service-2.jpg" class="img-fuild mb-3 mb-sm-0" alt="">
+                            <img src="../images/service-2.jpg" class="img-fluid mb-3 mb-sm-0" alt="">
                         </div>
                         <div class="col-sm-7">
                             <h4><i class="fa fa-coffee service-icon"></i>Fastest Door Delivery</h4>
@@ -131,7 +150,7 @@
                 <div class="col-lg-6 mb-5">
                     <div class="row align-items-center">
                         <div class="col-sm-5">
-                            <img src="../images/service-3.jpg" class="img-fuild mb-3 mb-sm-0" alt="">
+                            <img src="../images/service-3.jpg" class="img-fluid mb-3 mb-sm-0" alt="">
                         </div>
                         <div class="col-sm-7">
                             <h4><i class="fa fa-award service-icon"></i>Online Table Booking</h4>
@@ -146,7 +165,7 @@
                 <div class="col-lg-6 mb-5">
                     <div class="row align-items-center">
                         <div class="col-sm-5">
-                            <img src="../images/service-4.jpg" class="img-fuild mb-3 mb-sm-0" alt="">
+                            <img src="../images/service-4.jpg" class="img-fluid mb-3 mb-sm-0" alt="">
                         </div>
                         <div class="col-sm-7">
                             <h4><i class="fa fa-table service-icon"></i>Fresh Coffee Beans</h4>
@@ -163,6 +182,242 @@
     </div>
     <!-- SERVİCE SECTİON END -->
 
+    <!-- OFFER SECTİON START -->
+    <div class="offer container-fluid my-5 py-5 text-center position-relative overlay-top overlay-button">
+        <div class="container py-5">
+            <h1 class="display-3 text-primary mt-3">50% OFF</h1>
+            <h1 class="text-white mb-3">Sunday Special Offer</h1>
+            <h4 class="text-white font-weight-normal mb-4 pb-3">Only for Sunday from 1st Jan to 30th Jan 2034</h4>
+            <form action="" class="form-inline justify-content-center mb-4 overlay-bottom">
+                <div class="input-group">
+                    <input type="text" class="form-control rounded-0" placeholder="Your Email"
+                        style="height: 64.3px; width: 228px !important;" name="" id="">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary py-3 px-3 rounded-0">Sign Up</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- OFFER SECTİON END -->
+
+    <!-- MENU SECTİON START -->
+    <div class="container-fluid pt-5">
+        <div class="container">
+            <div class="section-title">
+                <h4 class="text-primary text-uppercase">Menu & Pricing</h4>
+                <h1 class="display-4">Competitive Pricing</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="mb-5">Hot Coffee</h1>
+                    <div class="row align-items-center mb-5">
+                        <div class="col-4 col-sm-3 menu-item">
+                            <img src="../images/menu-1.jpg" class="w-100 rounded-circle mb-3 mb-sm-0" alt="">
+                            <h5 class="menu-price">$5</h5>
+                        </div>
+                        <div class="col-8 col-sm-9">
+                            <h4>Black Coffee</h4>
+                            <p class="m-0">Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row align-items-center mb-5">
+                        <div class="col-4 col-sm-3 menu-item">
+                            <img src="../images/menu-2.jpg" class="w-100 rounded-circle mb-3 mb-sm-0" alt="">
+                            <h5 class="menu-price">$7</h5>
+                        </div>
+                        <div class="col-8 col-sm-9">
+                            <h4>Chocolete Coffee</h4>
+                            <p class="m-0">Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row align-items-center mb-5">
+                        <div class="col-4 col-sm-3 menu-item">
+                            <img src="../images/menu-3.jpg" class="w-100 rounded-circle mb-3 mb-sm-0" alt="">
+                            <h5 class="menu-price">$9</h5>
+                        </div>
+                        <div class="col-8 col-sm-9">
+                            <h4>Coffee With Milk</h4>
+                            <p class="m-0">Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="mb-5">Cold Coffee</h1>
+                    <div class="row align-items-center mb-5">
+                        <div class="col-4 col-sm-3 menu-item">
+                            <img src="../images/menu-1.jpg" class="w-100 rounded-circle mb-3 mb-sm-0" alt="">
+                            <h5 class="menu-price">$5</h5>
+                        </div>
+                        <div class="col-8 col-sm-9">
+                            <h4>Black Coffee</h4>
+                            <p class="m-0">Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row align-items-center mb-5">
+                        <div class="col-4 col-sm-3 menu-item">
+                            <img src="../images/menu-2.jpg" class="w-100 rounded-circle mb-3 mb-sm-0" alt="">
+                            <h5 class="menu-price">$7</h5>
+                        </div>
+                        <div class="col-8 col-sm-9">
+                            <h4>Chocolete Coffee</h4>
+                            <p class="m-0">Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row align-items-center mb-5">
+                        <div class="col-4 col-sm-3 menu-item">
+                            <img src="../images/menu-3.jpg" class="w-100 rounded-circle mb-3 mb-sm-0" alt="">
+                            <h5 class="menu-price">$9</h5>
+                        </div>
+                        <div class="col-8 col-sm-9">
+                            <h4>Coffee With Milk</h4>
+                            <p class="m-0">Sit lorem ipsum et diam elitr est dolor sed duo guberg sea et et lorem dolor
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MENU SECTİON END -->
+
+    <!-- RESERVATİON SECTİON START -->
+    <div class="container-fluid my-5">
+        <div class="container">
+            <div class="reservation position-relative overlay-top overlay-bottom">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 my-5 my-lg-0">
+                        <div class="p-5">
+                            <div class="mb-4">
+                                <h1 class="display-3 text-primary">30% OFF</h1>
+                                <h1 class="text-white">For Online Reservation</h1>
+                            </div>
+                            <p class="list-inline text-white m-0">Lorem justo clita erat lorem labore ea, justo dolor
+                                lorem ipsum ut sed eos, ipsum et dolor kasd sit ea justo. Erat justo sed sed diam. Ea et
+                                erat ut sed diam sea</p>
+                            <ul class="list-inline text-white m-0">
+                                <li class="py-2"><i class="fa fa-check text-primary me-3"></i>Lorem ipsum dolor sit
+                                    amet.</li>
+                                <li class="py-2"><i class="fa fa-check text-primary me-3"></i>Lorem ipsum dolor sit
+                                    amet.</li>
+                                <li class="py-2"><i class="fa fa-check text-primary me-3"></i>Lorem ipsum dolor sit
+                                    amet.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="text-center p-5" style="background: rgba(62, 16, 16, 0.505);">
+                            <h1 class="text-white mb-4 mt-5">Book Your Table</h1>
+                            <form action="" class="mb-5">
+                                <div class="form-group mb-3">
+
+                                    <input type="text" class="form-control bg-transparent border-primary p-4 rounded-0"
+                                        placeholder="Name" required="required">
+
+                                </div>
+                                <div class="form-group mb-3">
+                                    <input type="text" class="form-control bg-transparent border-primary p-4 rounded-0"
+                                        placeholder="Email" required="required">
+
+                                </div>
+                                <div class="form-group mb-3">
+                                    <div class="date" id="date" data-target-input="nearest">
+                                        <input type="text"
+                                            class="form-control bg-transparent border-primary p-4 datetimepicker-input rounded-0"
+                                            placeholder="Date" data-target="#date" data-toggle="datatimepicker">
+                                    </div>
+
+                                </div>
+                                <div class="form-group mb-3">
+                                    <div class="time" id="time" data-target-input="nearest">
+                                        <input type="text"
+                                            class="form-control bg-transparent border-primary p-4 datetimepicker-input rounded-0"
+                                            placeholder="Time" data-target="#time" data-toggle="datatimepicker">
+                                    </div>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <select name="" class="custom-select bg-transparent border-primary w-100 rounded-0"
+                                        style="height: 49px" id="">
+                                        <option value="" selected>Person</option>
+                                        <option value="1">Person 1</option>
+                                        <option value="2">Person 2</option>
+                                        <option value="3">Person 3</option>
+                                        <option value="4">Person 4</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <button class="btn btn-primary btn-block w-100 mt-2 rounded-0 p-3"
+                                        type="submit">Book Now</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- RESERVATİON SECTİON END -->
+
+
+    <!-- FOOTER SECTİON START -->
+    <div class="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top">
+        <div class="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-white text-uppercase mb-4">Get It Touch</h4>
+                <p><i class="fa fa-map-marker-alt mr-2"></i> 123 Street, New York, USA</p>
+                <p><i class="fa fa-phone-alt mr-2"></i> +012 345 67890</p>
+                <p class="m-0"><i class="fa fa-envelope mr-2"></i> info@example.com</p>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-white text-uppercase mb-4">Follow Us</h4>
+                <p>Amet elitr vero magna sed ipsum sit kasd sea elitr lorem rebum</p>
+                <div class="d-flex justify-content-start">
+                    <a href="" class="btn btn-lg btn-outline-light btn-lg-square me-2"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="" class="btn btn-lg btn-outline-light btn-lg-square me-2"><i
+                            class="fab fa-facebook"></i></a>
+                    <a href="" class="btn btn-lg btn-outline-light btn-lg-square me-2"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="" class="btn btn-lg btn-outline-light btn-lg-square"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-white text-uppercase mb-4">Open hours</h4>
+                <div class="">
+                    <h6 class="text-white text-uppercase">Monday - Friday</h6>
+                    <p>8.00 AM - 8.00 PM</p>
+                    <h6 class="text-white text-uppercase">Saturday - Sunday</h6>
+                    <p>8.00 AM - 8.00 PM</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="text-white text-uppercase mb-4">Newsletter</h4>
+                <p>Amet elitr vero magna sed ipsum sit kasd sea elitr lorem rebum</p>
+                <div class="w-100">
+                    <div class="input-group">
+                        <input type="text" class="form-control border-light rounded-0" style="padding: 10px;"
+                            placeholder="Your Email">
+                        <div class="input-groupappend">
+                            <button class="btn btn-primary px-4 rounded-0" style="height: 57px;">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-center container-fluid">&copy; All Right Reserved. Made by Heart Coding</p>
+        </div>
+    </div>
+    <!-- FOOTER SECTİON END -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
